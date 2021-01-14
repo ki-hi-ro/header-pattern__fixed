@@ -1,0 +1,60 @@
+@import "_breakpoint";
+
+header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    .header-wrap {
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem;
+        width: 100%;
+        &__left {
+            margin-right: auto;
+        }
+        &__right {
+            display: flex;
+            align-items: center;
+            ul {
+                list-style: none;
+                display: flex;
+                margin-bottom: 0;
+                li {
+                    margin-left: 2rem;
+                }
+            }
+            .icons {
+                margin-left: 2rem;
+                img:nth-child(2) {
+                    margin-left: .8rem;
+                }
+            }
+        }
+    }
+}
+
+main {
+    height: 200vh;
+    padding-top: 64px;
+    .card {
+        margin: 5rem auto 0;
+        &-img {
+            img {
+                object-fit: center;
+                width: 286px;
+            }
+        }
+        .btn {
+            background-color: #067B33;
+            color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: #067B33;
+                border: 1px solid #067B33;
+                transition: all .3s;
+            }
+        }
+    }
+}
